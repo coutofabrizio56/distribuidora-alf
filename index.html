@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <title>Distribuidora A.L.F.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">A.L.F.</span><span><b>Distribuidora</b><small>Insumos y productos veterinarios</small></span></a>
+    <a class="admin-link" href="admin.html">Administración</a>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">DISTRIBUIDORA A.L.F.</p>
+      <h1>Todo lo que necesitás para tu veterinaria.</h1>
+      <p>Explorá nuestro catálogo de insumos, accesorios y productos para el cuidado animal.</p>
+    </section>
+    <section class="catalog">
+      <div class="section-heading"><div><p class="eyebrow">CATÁLOGO</p><h2>Productos</h2></div><span id="product-count" class="muted"></span></div>
+      <div class="toolbar"><input id="search" type="search" placeholder="Buscar productos..."><select id="category"><option value="">Todas las categorías</option></select></div>
+      <div id="products" class="product-grid"><p class="muted">Cargando catálogo...</p></div>
+    </section>
+  </main>
+  <button id="cart-toggle" class="cart-toggle">Bolsa <span id="cart-count">0</span></button>
+  <aside id="cart-panel" class="cart-panel" aria-label="Bolsa de compra">
+    <div class="cart-head"><h2>Tu bolsa</h2><button id="close-cart" class="icon-button" aria-label="Cerrar">×</button></div>
+    <div id="cart-items"></div>
+    <div class="cart-total"><span>Total estimado</span><b id="cart-total">$0</b></div>
+    <button id="send-order" class="primary-button full">Enviar pedido por WhatsApp</button>
+    <p class="muted tiny">El pedido se coordina directamente con la distribuidora. No se realizan pagos en línea.</p>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  <script src="store.js"></script>
+</body>
+</html>
